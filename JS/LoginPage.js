@@ -12,7 +12,7 @@ function onSubmit() {
       //Redirect to home page.
       window.location.replace("../Pages/HomePage.html");
     })
-    .catch(function(error) {
+    .catch(function (error) {
       // Handle Errors here.
       console.log("Failed to sign in");
       var errorCode = error.code;

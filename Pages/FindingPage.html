@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPOAePgFbDCBU0rsOdvWX66C2CPUB2CZM&callback=initMap"></script>
+  <script src="../JS/FindingPage.js"></script>
+  <!-- <script
+      type="text/javascript"
+      src="http://maps.google.com/maps/api/js?sensor=false"
+    ></script> -->
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body onload="initialize()">
+  <h3>Sharing is Caring</h3>
+  <div id="map"></div>
+  <input id="address" type="textbox" value="Sydney, NSW">
+
+  <button onclick="codeAddress()">Code</button>
+
+  <script>
+  </script>
+</body>
+
+</html>
