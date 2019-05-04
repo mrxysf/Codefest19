@@ -1,10 +1,3 @@
-const db = firebase.firestore();
-const auth = firebase.auth();
-
-db.collection("users")
-  .get()
-  .then(snapshot => snapshot.docs.forEach(doc => console.log(doc.data())));
-
 function onSubmit() {
   email = document.getElementById("inputEmail").value;
   password = document.getElementById("inputPassword").value;
@@ -17,6 +10,7 @@ function onSubmit() {
       //user unique ID
       console.log(user.user.uid);
       //Redirect to home page.
+      window.location.replace("../Pages/HomePage.html");
     })
     .catch(function(error) {
       // Handle Errors here.
