@@ -1,13 +1,10 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../CSS/LoginPage.css" />
-
+    <link rel="stylesheet" href="../CSS/SignInPage.css" />
     <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
     <script src="../JS/firebase.js"></script>
-    <script src="../JS/LoginPage.js"></script>
 
     <link
       rel="stylesheet"
@@ -30,13 +27,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../JS/SignUpPage.js"></script>
   </head>
   <body>
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">Login</h5>
+        <h5 class="card-title">Sign Up</h5>
         <form>
           <div class="form-group">
             <label for="inputEmail">Email address</label>
@@ -57,9 +53,17 @@
               placeholder="Password"
             />
           </div>
-          <a href="./SignUpPage.html" class="card-link"
-            >Don't have an account?</a
-          >
+          <div class="form-group">
+            <label for="inputPassword">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputState"
+              placeholder="State"
+            />
+          </div>
+
+          <a href="./SignUpPage" class="card-link">Don't have an account?</a>
           <br />
           <br />
           <button
