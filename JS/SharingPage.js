@@ -4,7 +4,6 @@ function onSubmit() {
   address = document.getElementById("inputAddress").value;
   description = document.getElementById("inputDescription").value;
 
-  console.log(this.currentUser);
   db.collection("users")
     .doc(currentUser.uid)
     .collection("itemList")
@@ -15,6 +14,7 @@ function onSubmit() {
     })
     .then(ref => {
       console.log("Successful ID:", ref.id);
+      window.location.replace("../Pages/HomePage.html");
     })
     .catch(error => alert("Error writing document: ", error));
 }
